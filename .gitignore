@@ -1,0 +1,5 @@
+﻿.vscode/
+.idea
+webservice/pkg/
+webservice/bin/
+webservice/logs/
