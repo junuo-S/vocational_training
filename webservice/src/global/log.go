@@ -36,7 +36,7 @@ func initLogSettings() {
 	logrus.SetOutput(writer)
 }
 
-func JunuoWebLog() gin.HandlerFunc {
+func JunuoWebLogMiddleware() gin.HandlerFunc {
 	return func(context *gin.Context) {
 		startTime := time.Now()
 		context.Next()

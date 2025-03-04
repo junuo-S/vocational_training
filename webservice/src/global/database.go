@@ -10,7 +10,7 @@ var JunuoDb *sql.DB = nil
 
 func initDataBaseSettings() {
 	var err error
-	JunuoDb, err = sql.Open("mysql", "root:123456@tcp(127.0.0.1:3306)/test?charset=utf8")
+	JunuoDb, err = sql.Open("mysql", "root:123456@tcp(127.0.0.1:3306)/vocational_training?charset=utf8")
 	if err != nil {
 		panic(err)
 	}

@@ -8,6 +8,6 @@ import (
 
 func main() {
 	rootRouter := gin.New()
-	rootRouter.Use(global.JunuoWebLog(), gin.Recovery())
+	rootRouter.Use(global.JunuoWebLogMiddleware(), global.AntiSpiderMiddleware(), gin.Recovery())
 	rootRouter.Run(":3000")
 }
